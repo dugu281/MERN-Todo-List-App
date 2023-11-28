@@ -18,7 +18,7 @@ const App = () => {
 		getTasks();
 	}, []);
 
-	axios.defaults.baseURL = "http://localhost:5050";        // port number for database connection
+	axios.defaults.baseURL = "https://mern-todo-server-93m5.onrender.com";        // port number for database connection
 
 
 	// function to get all the tasks
