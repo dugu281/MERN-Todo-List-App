@@ -18,7 +18,16 @@ mongoose.connect(DB, {
 });
 
 // CORS for cross-origin requests
-app.use(cors());
+// app.use(cors());
+
+app.use(cors(
+    {
+        origin: ["https://mern-todo-list-app.vercel.app"],
+        methods: ["POST", "GET", "PUT", "DELETE"],
+        credentials: true
+    }
+));
+
 
 // Parse JSON requests
 app.use(express.json());
