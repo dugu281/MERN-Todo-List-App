@@ -7,7 +7,7 @@ require('dotenv').config();
 
 // An instance of Express app
 const app = express();
-const port = 3005;
+const port = process.env.PORT
 
 const DB = process.env.MONGO_DB_URL            // database to connect to
 
